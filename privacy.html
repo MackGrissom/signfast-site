@@ -17,16 +17,27 @@
 <body>
 
 <h1>Sign Any PDF Privacy Policy</h1>
-<p class="lede">Last updated 2026-09-14. Sign Any PDF was previously called Sign Any PDF; the bundle identifier still reflects the old name.</p>
+<p class="lede">Last updated 2026-10-19. This version covers Sign Any PDF 2.3.0 and later, which add anonymous usage analytics (see below). The bundle identifier still reflects the app's old name, SignFast.</p>
 
-<p>Sign Any PDF is a PDF signing app that runs entirely on your device. We have intentionally
-designed it so that we cannot see, store, or transmit your documents, your signatures,
-or any information about how you use the app.</p>
+<p>Sign Any PDF is a PDF signing app. Your documents, signatures and saved details are
+processed and stored on your device, and we never see, store or transmit them. From version
+2.3.0 the app sends anonymous usage analytics so we can fix and improve it. You can switch
+this off at any time in Settings &rarr; Share analytics.</p>
 
 <h2>Data we collect</h2>
-<p><strong>None.</strong> Sign Any PDF does not collect, transmit, or store any personal
-information on any server we control. There are no accounts, no logins, no telemetry,
-no analytics, no advertising identifiers, no crash-reporting third parties.</p>
+<p>There are no accounts, no logins, no ads and no advertising identifiers, and we do not
+track you across other companies' apps or websites. With Share analytics on (the default), the app sends
+anonymous usage events: which screens are opened, taps and feature use, purchase events
+(started, completed, cancelled, restored), the app and iOS version, the device model, language and mobile carrier, and your
+approximate location (country, region or city, derived from your IP address). Each event carries a
+random identifier created on your device at install, plus Amplitude's device identifier (Apple's
+identifier for vendor, which is specific to this developer's apps). Neither is your Apple ID, name,
+email or advertising identifier.</p>
+<p>On screens that show none of your documents or signatures, Amplitude Session Replay may
+record a masked replay of screen activity in which text is hidden. The document editor,
+signature pad, saved signatures, profile details, export options and document list are excluded from replay
+entirely. Your documents, signatures, typed text and saved details are never recorded or sent.</p>
+<p>Turning Share analytics off in Settings stops analytics events and replay.</p>
 
 <h2>Data that stays on your device</h2>
 <p>The following are stored locally on your device and are never sent anywhere by Sign Any PDF:</p>
@@ -46,13 +57,15 @@ StoreKit and the App Store. Apple sends us only an anonymous receipt indicating 
 a purchase occurred, so the app can unlock exporting, saved details and the page tools. Pro is a single one-time purchase; there is no subscription and nothing renews. Your billing information,
 Apple ID, and payment method are visible only to Apple, not to us. See
 <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> for how Apple
-handles your purchase data.</p>
+handles your purchase data. While Share analytics is on, RevenueCat (a purchase-management service) also
+receives purchase and entitlement events keyed to the same random install identifier; it does
+not receive your payment details.</p>
 
 <h2>Third-party services</h2>
-<p>Sign Any PDF does not embed or call any third-party SDKs for analytics, advertising,
-crash reporting, or user tracking. The app does not make any network requests during
-normal use. The only network activity comes from iOS itself (for example, StoreKit
-during a purchase).</p>
+<p>Usage events are sent to our own analytics endpoint and to Amplitude, which processes them
+on our behalf. RevenueCat receives purchase events as described above. Sign Any PDF has no
+advertising SDKs and does not track you. Apart from these analytics and purchase calls, network
+activity comes from iOS itself (for example, StoreKit during a purchase).</p>
 
 <h2>Children</h2>
 <p>Sign Any PDF is a general-purpose utility for signing PDFs and is not directed at
@@ -60,9 +73,7 @@ children under 13. We do not knowingly collect data from anyone.</p>
 
 <h2>Changes to this policy</h2>
 <p>If we ever change what Sign Any PDF does with data, we will update this page with a new
-"last updated" date. Because Sign Any PDF is offline-first, any future change that involves
-collecting data would also require a new app version that you would have to choose to
-install.</p>
+"last updated" date.</p>
 
 <h2>Contact</h2>
 <p>Questions, concerns, or privacy requests:
